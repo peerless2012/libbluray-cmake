@@ -1,0 +1,3 @@
+[submodule "src/bluray"]
+	path = src/bluray
+	url = https://code.videolan.org/videolan/libbluray.git
