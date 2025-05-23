@@ -79,4 +79,5 @@ if(EXISTS ${PROJECT_SOURCE_DIR}/cmake/files/meson-cross-android.in)
     unset(MESON_SYSTEM_CPU_FAMILY)
 endif()
 
+include(cmake/udfread.cmake)
 include(cmake/bluray.cmake)

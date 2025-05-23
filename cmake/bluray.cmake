@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 ExternalProject_Add(ep_bluray
+        DEPENDS ep_udfread
         SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}
         SOURCE_SUBDIR "src/bluray"
         INSTALL_DIR ${CMAKE_BINARY_DIR}
