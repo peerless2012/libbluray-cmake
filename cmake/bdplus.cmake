@@ -1,12 +1,12 @@
 cmake_minimum_required(VERSION 3.10)
-ExternalProject_Add(ep_bluray
-#        DEPENDS ep_aacs ep_bdplus
+ExternalProject_Add(ep_bdplus
+        DEPENDS ep_gcrypt
         SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}
-        SOURCE_SUBDIR "src/bluray"
+        SOURCE_SUBDIR "src/bdplus"
         INSTALL_DIR ${CMAKE_BINARY_DIR}
         CONFIGURE_COMMAND
             ${CMAKE_COMMAND} -E env ${PLATFORM_CONFIGURE_ENV}
-            <SOURCE_DIR>/<SOURCE_SUBDIR>/configure ${PLATFORM_BUILD_AND_HOST} -prefix=<INSTALL_DIR> --enable-static --disable-shared --disable-bdjava-jar --without-libxml2 --without-freetype --without-fontconfig
+            <SOURCE_DIR>/<SOURCE_SUBDIR>/configure ${PLATFORM_BUILD_AND_HOST} -prefix=<INSTALL_DIR> --enable-static --disable-shared
         BUILD_COMMAND make
         INSTALL_COMMAND make install
 )

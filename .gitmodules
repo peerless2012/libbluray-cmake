@@ -4,3 +4,15 @@
 [submodule "src/udfread"]
 	path = src/udfread
 	url = https://code.videolan.org/videolan/libudfread.git
+[submodule "src/aacs"]
+	path = src/aacs
+	url = https://code.videolan.org/videolan/libaacs.git
+[submodule "src/bdplus"]
+	path = src/bdplus
+	url = https://code.videolan.org/videolan/libbdplus.git
+[submodule "src/gcrypt"]
+	path = src/gcrypt
+	url = https://github.com/gpg/libgcrypt.git
+[submodule "src/gpg-error"]
+	path = src/gpg-error
+	url = https://github.com/gpg/libgpg-error.git
